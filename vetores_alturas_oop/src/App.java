@@ -22,6 +22,7 @@ public class App {
             vet[i] = new Pessoa(nome, idade, altura);
         }
 
+        System.out.println("-------------------");
         double soma = 0;
         for (int j = 0; j < vet.length; j++) {
             soma += vet[j].getAltura();
@@ -37,7 +38,7 @@ public class App {
         }
 
         double porcentagem = (qtd / vet.length) * 100;
-        System.out.println("Pessoas com menos de 16 anos: " + porcentagem);
+        System.out.println("Pessoas com menos de 16 anos: " + porcentagem + "%");
         for (int l = 0; l < vet.length; l++) {
             if (vet[l].getIdade() < 16) {
                 System.out.println(vet[l].getNome());
