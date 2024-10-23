@@ -45,6 +45,11 @@ public class Funcionario {
         this.salary += (porcentagem*salary) / 100;
     }
 
+    //Função de diminuir salário, regra de negócio tbm
+    public void diminuirSalario(double porcentagem) {
+        this.salary -= (porcentagem*salary) / 100;
+    }
+
     //toString pra imprimir as informações do funcionário quando a função é chamada
     @Override
     public String toString() {

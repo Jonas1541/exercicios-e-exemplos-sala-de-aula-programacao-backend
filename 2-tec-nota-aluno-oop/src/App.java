@@ -13,7 +13,12 @@ public class App {
         System.out.print("Digite a nota do 3° Trimestre: ");
         double nota3 = sc.nextDouble();
 
-        
+        Aluno aluno = new Aluno(nome, nota1, nota2, nota3);
+
+        System.out.printf("Média final: %.2f \n", aluno.notaFinal());
+        //System.out.println("Média final: " + aluno.notaFinal());
+
+        aluno.teste();
 
         sc.close();
     }

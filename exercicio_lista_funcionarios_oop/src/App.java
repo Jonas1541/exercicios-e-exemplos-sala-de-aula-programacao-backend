@@ -42,6 +42,19 @@ public class App {
             }
         }
 
+        System.out.print("Digite o id do funcionário que vai ter o salário reduzido: ");
+        id = sc.nextInt();
+        System.out.print("Digite a porcentagem: ");
+        porcentagem = sc.nextDouble();
+
+        //Percorre lista em busca do funcionário com o id passado e aplica a redução
+        for(Funcionario funcionario : funcionarios) {
+            if(funcionario.getId() == id) {
+                //A função de aumento existe na própria classe, pois é relacionada ao funcionário
+                funcionario.diminuirSalario(porcentagem);
+            }
+        }
+
         //Percorrer lista pra mostrar todos os funcionários
         for(Funcionario funcionario : funcionarios) {
             System.out.println(funcionario.toString());

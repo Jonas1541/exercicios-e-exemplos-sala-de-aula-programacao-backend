@@ -51,12 +51,12 @@ public class Aluno {
         return (nota1 + nota2 + nota3) / 3;
     }
 
-    public String teste() {
+    public void teste() {
         if(notaFinal() >= 60) {
-            return "Aprovado";
+            System.out.println("Aprovado");
         } else {
             double notaFaltante = 60 - notaFinal();
-            return "Reprovado /n Faltaram " + notaFaltante + " pontos";
+            System.out.printf("Reprovado \n Faltaram  %.2f pontos \n", notaFaltante);
         }
     }
 }
