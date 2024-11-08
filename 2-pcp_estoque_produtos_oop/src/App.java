@@ -13,7 +13,7 @@ public class App {
         int quantidade = sc.nextInt();
 
         Produto p = new Produto(nome, preco, quantidade);
-
+        
         System.out.println(p.toString());
 
         System.out.print("Quantos produtos serão adicionados? ");
