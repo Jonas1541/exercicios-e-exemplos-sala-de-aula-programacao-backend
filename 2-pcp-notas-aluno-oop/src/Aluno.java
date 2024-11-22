@@ -52,11 +52,13 @@ public class Aluno {
     }
 
     public String resultado() {
+        double missingPoints = 0;
         String aux = null;
         if (notaFinal() >= 60) {
             aux = "Aprovado!";
         } else if (notaFinal() < 60) {
-            aux = "Reprovado!";
+            missingPoints = 60 - notaFinal();
+            aux = "Reprovado! Faltaram " + missingPoints + " pontos.";
         }
         return aux;
     }
